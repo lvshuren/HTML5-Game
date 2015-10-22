@@ -1,8 +1,8 @@
-title: Throw Dice
+# Throw Dice
 
 ---
 
-Rules:
+**Rules**:
 
 - You have two dices, except total numbers(2~12) we care nothing.
 - If sum is (7 or 11), you win.

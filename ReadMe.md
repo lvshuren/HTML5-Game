@@ -1,3 +1,5 @@
-title: HTML5 Game
+# HTML5 Game
+
+---
 
 Fun little game written by HTML5
