@@ -13,7 +13,7 @@
 
 		function init() {
 			var ch = 1 + Math.floor(Math.random()*6);
-			drawface(ch);
+			drawface(1);
 		}
 
 		function drawface(n) {
@@ -52,8 +52,8 @@
 			var dotx;
 			var doty;
 			ctx.beginPath();
-			dotx = dicex + 5*dicewidth;
-			doty = dicey + 5*diceheight;
+			dotx = dicex + 0.5*dicewidth;
+			doty = dicey + 0.5*diceheight;
 			ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
 			ctx.closePath();
 			ctx.fill();
@@ -63,8 +63,8 @@
 			var dotx;
 			var doty;
 			ctx.beginPath();
-			dotx = dicex + 3*dicewidth;
-			doty = dicey + 3*diceheight;
+			dotx = dicex + 3*dotrad;
+			doty = dicey + 3*dotrad;
 			ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
 			dotx = dicex + dicewidth - 3*dotrad;
 			doty = dicey + diceheight - 3*dotrad;
@@ -77,8 +77,8 @@
 			var dotx;
 			var doty;
 			ctx.beginPath();
-			dotx = dicex + 3*dicewidth;
-			doty = dicey + 3*diceheight;
+			dotx = dicex + 3*dotrad;
+			doty = dicey + 3*dotrad;
 			ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
 			dotx = dicex + dicewidth - 3*dotrad;
 			doty = dicey + diceheight - 3*dotrad;
@@ -102,10 +102,10 @@
 			var doty;
 			ctx.beginPath();
 			dotx = dicex + 3*dotrad;
-			doty = dicey + 5*diceheight;
+			doty = dicey + 0.5*diceheight;
 			ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
 			dotx = dicex + dicewidth - 3*dotrad;
-			doty = dicey + 5*diceheight;
+			doty = dicey + 0.5*diceheight;
 			ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
 			ctx.closePath();
 			ctx.fill();
